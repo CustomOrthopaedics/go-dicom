@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/grailbio/go-dicom/dicomio"
-	"github.com/grailbio/go-dicom/dicomtag"
+	"github.com/CustomOrthopaedics/go-dicom/dicomio"
+	"github.com/CustomOrthopaedics/go-dicom/dicomtag"
 	"github.com/vanadium/go.lib/vlog"
 )
 

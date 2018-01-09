@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	"github.com/gobwas/glob"
-	"github.com/grailbio/go-dicom/dicomtag"
+	"github.com/CustomOrthopaedics/go-dicom/dicomtag"
 	"github.com/vanadium/go.lib/vlog"
 )
 

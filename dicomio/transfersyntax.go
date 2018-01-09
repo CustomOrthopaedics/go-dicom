@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/grailbio/go-dicom/dicomuid"
+	"github.com/CustomOrthopaedics/go-dicom/dicomuid"
 	"github.com/vanadium/go.lib/vlog"
 )
 

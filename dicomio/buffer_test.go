@@ -6,7 +6,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/grailbio/go-dicom/dicomio"
+	"github.com/CustomOrthopaedics/go-dicom/dicomio"
 )
 
 func TestBasic(t *testing.T) {

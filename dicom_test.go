@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/grailbio/go-dicom"
-	"github.com/grailbio/go-dicom/dicomtag"
-	"github.com/grailbio/go-dicom/dicomuid"
+	"github.com/CustomOrthopaedics/go-dicom"
+	"github.com/CustomOrthopaedics/go-dicom/dicomtag"
+	"github.com/CustomOrthopaedics/go-dicom/dicomuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/vanadium/go.lib/vlog"
