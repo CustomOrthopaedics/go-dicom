@@ -8,7 +8,7 @@ import (
 
 	"github.com/grailbio/go-dicom/dicomio"
 	"github.com/grailbio/go-dicom/dicomtag"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 // WriteFileHeader produces a DICOM file header. metaElems[] is be a list of
@@ -385,14 +385,16 @@ func WriteDataSet(out io.Writer, ds *DataSet) error {
 
 // WriteDataSetToFile writes "ds" to the given file. If the file already exists,
 // existing contents are clobbered. Else, the file is newly created.
-func WriteDataSetToFile(path string, ds *DataSet) error {
+func WriteDataSetToFile (path string, ds *DataSet) (*os.File, error) {
 	out, err := os.Create(path)
+	defer out.Close()
+
 	if err != nil {
-		return err
+		return out, err
 	}
 	if err := WriteDataSet(out, ds); err != nil {
 		out.Close()
-		return err
+		return out, err
 	}
-	return out.Close()
+	return out, err
 }

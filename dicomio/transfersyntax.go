@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/grailbio/go-dicom/dicomuid"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 // Standard list of transfer syntaxes.

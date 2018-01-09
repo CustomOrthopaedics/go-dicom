@@ -10,7 +10,7 @@ import (
 
 	"github.com/grailbio/go-dicom/dicomio"
 	"github.com/grailbio/go-dicom/dicomtag"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 // Constants

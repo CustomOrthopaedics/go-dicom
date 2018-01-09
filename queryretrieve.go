@@ -7,7 +7,7 @@ import (
 
 	"github.com/gobwas/glob"
 	"github.com/grailbio/go-dicom/dicomtag"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 func querySequence(elem *Element, f *Element) (match bool, err error) {

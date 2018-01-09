@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 // Tag is a <group, element> tuple that identifies an element type in a DICOM
@@ -109,7 +109,7 @@ func GetVRKind(tag Tag, vr string) VRKind {
 		return VRUInt16List
 	case "SS":
 		return VRInt16List
-	case "FL":
+	case "ExplicitVRLittleEndian":
 		return VRFloat32List
 	case "FD":
 		return VRFloat64List

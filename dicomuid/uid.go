@@ -9,7 +9,7 @@ package dicomuid
 import (
 	"fmt"
 
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 type UIDType string

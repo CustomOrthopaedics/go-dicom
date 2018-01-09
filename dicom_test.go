@@ -9,7 +9,7 @@ import (
 	"github.com/grailbio/go-dicom/dicomuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
 )
 
 func mustReadFile(path string, options dicom.ReadOptions) *dicom.DataSet {

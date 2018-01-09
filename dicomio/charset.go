@@ -3,7 +3,8 @@ package dicomio
 import (
 	"golang.org/x/text/encoding"
 	"golang.org/x/text/encoding/htmlindex"
-	"v.io/x/lib/vlog"
+	"github.com/vanadium/go.lib/vlog"
+
 )
 
 // CodingSystem how a []byte is translated into a utf8 string.
